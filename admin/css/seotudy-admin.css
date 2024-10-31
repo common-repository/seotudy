@@ -1,0 +1,388 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+/* HEADER */
+.seotudy-header{
+	float:left;
+	width: calc(100% - 95px);
+	padding: 40px;
+	box-sizing: border-box;
+	background: #fff;
+	margin: 50px 0 0 50px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}.seotudy-header .seotudy-logo{
+	float:left; width:150px;
+}.seotudy-header .seotudy-logo .pl-version{
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    margin: 10px 0 -20px;
+    font-weight: bold;
+}.seotudy-header .seotudy-slogan{
+    float: left;
+    margin-top: 15px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+/* HEADER */
+ 
+/* CONTENT */
+.seotudy-content{
+	float:left;
+	width: calc(100% - 95px);
+	box-sizing: border-box;
+	background: #e7e7e7;
+	margin: 0 50px 50px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+/* CONTENT */
+ 
+.seotudy{
+    font-family:arial,sans-serif;
+}.seotudy .pageTitle{
+    padding:10px 0px 20px;
+}
+ 
+/* TABS */
+.seotudy-tabs{
+    float:left;
+    width:100%;
+    position: relative;
+    z-index: 9;
+}.seotudy-tabs .tab{
+	position:relative;
+    float:left;
+    width:100%;
+    padding: 20px;
+    font-size:14px;
+    cursor:pointer;
+    font-size: 18px;
+    color: #000000;
+    border-bottom: 1px solid #d5d5d5;
+	background: #dbdbdb;
+}.seotudy-tabs .tab i{
+    float:left;
+    margin-right: 15px;
+}.seotudy-tabs .tab .new-notice{
+    position: absolute;
+    top: 18px;
+    left: 32px;
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 500px;
+}.seotudy-tabs .tab.active{
+    background: #231c49;
+    border-bottom:none;
+    color: #ffffff;
+}.seotudy-tabs .tab.active:after {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-left-color: #04020a;
+    border-width: 14px;
+    margin-top: -14px;
+}
+.seotudy-tabsContent{
+    float:left;
+    width:100%;
+    /* padding:10px; */
+    box-sizing:border-box;
+    border-right: 1px solid #dbdbdb;
+}.seotudy-tabsContent .tabContentCol{
+    float:left;
+    width:100%;
+    border-bottom: 1px solid #d5d5d5;
+    background: #f1f1f1;
+    padding: 15px 20px;
+}.seotudy-tabsContent .tabContentHead{
+    float:left;
+    width: calc(100% - 30px);
+    border-bottom: 1px solid #eaeaea;
+    font-size: 24px;
+    padding: 10px 0px 25px;
+    font-weight: 600;
+    margin: 0px 15px 10px;
+    color: #505050;
+}
+/* TABS */
+
+/* FORM ELEMENTS */
+.seotudy-formElement{
+    float:left;
+    width: calc(100% - 30px);
+    margin-bottom:15px;
+    margin: 0px 15px 15px;
+}.seotudy-formElement label{
+    float:left;
+    padding: 10px 0px;
+    font-weight: bold;
+    margin: 0px;
+}.seotudy-formElement.labelUp label{
+    float:left;
+    width:100%;
+}.seotudy-formElement label + input{
+    float:left;
+    padding: 10px;
+}.seotudy-formElement.labelUp input[type="text"]{
+    float:left;
+    width:100%;
+    margin: 0px;
+}.seotudy-formElement.labelUp textarea{
+    float: left;
+    width: 100%;
+    height: 100px;
+    margin: 0px;
+    resize: none;
+}.seotudy-formElement .radioButton{
+    float:left;
+    margin-right: 15px;
+}.seotudy-formElement .radioButton input[type="radio"]{
+    float:left;
+    margin-top: 10px;
+}.seotudy-formElement .radioButton label{
+    float:left;
+    margin: 0px 10px 0px 4px;
+}.seotudy-formElement .checkbox{
+    float:left;
+    width: 25%;
+    margin-right: 15px;
+}.seotudy-formElement .checkbox.new {
+    color: #4CAF50;
+}.seotudy-formElement .checkbox input[type="checkbox"]{
+    float:left;
+    margin-top: 10px;
+}.seotudy-formElement .checkbox label{
+    float:left;
+    margin: 0px 10px 0px 4px;
+}.seotudy-formElement .textarea{
+    float:left; width:100%;
+}.seotudy-formElement textarea{
+    float:left; width:100%; height:450px;
+    margin: 0px 10px 0px 4px;
+}
+.seotudy-buttons{
+    float:left; width:100%;
+}
+.seotudy-buttons button{
+    float: left;
+    padding: 10px 40px;
+    border: none;
+    background: #231c49;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 20px;
+}.seotudy-buttons .ajax-result{
+	float: left;
+	padding: 10px 10px;
+	color: #9C27B0;
+	font-weight: bold;
+}
+@media(max-width:1140px){
+	.seotudy-formElement .checkbox{
+		float:left;
+		width: calc(50% - 30px);
+		margin-right: 15px;
+	}
+}
+@media(max-width:780px){
+	.seotudy-formElement .checkbox{
+		float:left;
+		width: 100%;
+	}.seotudy-formElement .checkbox label{
+		font-size: 12px;
+	}
+}
+/* FORM ELEMENTS */
+
+/* GRID */
+/*
+.col-10{
+    float:left; width:calc(100% / 1);
+}.col-9{
+    float:left; width:calc(100% / 1.3);
+}.col-8{
+    float:left; width:calc(100% / 1.5);
+}.col-7{
+    float:left; width:calc(100% / 1.7);
+}.col-6{
+    float:left; width:calc(100% / 1.9);
+}.col-5{
+    float:left; width:calc(100% / 2);
+}.col-4{
+    float:left; width:calc(100% / 2.3);
+}.col-3{
+    float:left; width:calc(100% / 2.5);
+}.col-2{
+    float:left; width:calc(100% / 2.7);
+}.col-1{
+    float:left; width:calc(100% / 3);
+}
+*/
+/* GRID */
+
+.seotudy-searchEnginePreview{
+    float:left; width:100%;
+}.seotudy-searchEnginePreview .seotudy-tab{
+    background: #fff;
+}.seotudy-searchEnginePreview .seotudy-tab.active{
+    background: #03a9f4c7;
+}.seotudy-searchEnginePreview .seotudy-preview-title{
+    font-size: 18px !important;
+    font-weight: bold !important;
+    /* margin-bottom: 10px !important; */
+}
+
+/* COMİNG SOON */
+.seotudy-coming-soon{
+    float:left; width:100%; text-align:center; font-size:22px; padding:20px; box-sizing:border-box;
+}
+/* COMİNG SOON */
+
+/* GOOGLE PREVİEW */
+.seotudy-google-preview{
+    float:left; width:100%;
+}.seotudy-google-preview .title{
+    float:left;
+    width: 600px;
+    cursor: pointer;
+    color: #1a0dab;
+    font-size: 18px;
+    font-family: arial,sans-serif;
+    line-height: 1.2;
+    text-align: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+}.seotudy-google-preview .url{
+    float:left;
+    width: 600px;
+    color: #006621;
+    font-size: 14px;
+    white-space: nowrap;
+}.seotudy-google-preview .desc{
+    float:left;
+    width: 600px;
+    color: #545454;
+    line-height: 1.4;
+    word-wrap: break-word;
+    font-size: small;
+    font-family: arial,sans-serif;
+    line-height: 1.2;
+    text-align: left;
+}
+/* GOOGLE PREVİEW */
+
+/* YANDEX PREVİEW */
+.seotudy-yandex-preview{
+    float:left; width:100%;
+}.seotudy-yandex-preview .title{
+    float:left;
+    width: 536px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: arial,sans-serif;
+    line-height: 1.2;
+    text-align: left;
+    display: inline-block;
+    overflow: hidden;
+    max-width: 100%;
+    vertical-align: top;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #00c;
+    font-weight: 400;
+}.seotudy-yandex-preview .url{
+    float:left;
+    width: 536px;
+    color: #070;
+    font-size: 14px;
+    white-space: nowrap;
+}.seotudy-yandex-preview .desc{
+    float:left;
+    width: 536px;
+    color: #545454;
+    word-wrap: break-word;
+    font-size: 13px;
+    font-family: arial,sans-serif;
+    line-height: 1.2;
+    text-align: left;
+}
+/* YANDEX PREVİEW */
+
+/* TİTLE & DESC */
+.parameters{
+	float: left;
+    width: 100%;
+    background: #d1d1d1;
+    padding: 0 20px;
+}.parameters .title{
+	float:left;
+	width:100%;
+	padding: 20px;
+	border-bottom: 1px solid #b2b2b2;
+	font-size: 24px;
+	box-sizing: border-box;
+}.parameters ul{
+	float:left;
+	width:100%;
+	padding: 10px;
+	box-sizing: border-box;
+}.parameters ul li{
+	float:left;
+	width: calc(33.33% - 10px);
+	/* padding: 10px; */
+	background: #eee;
+	box-sizing: border-box;
+	margin: 5px;
+}.parameters ul li strong{
+	float:left;
+	width: 50%;
+	padding: 10px;
+}.parameters ul li strong:nth-child(2n){
+	background: #231c49;
+	color: #fff;
+}.parameters ul li .prew{
+	float:right;
+	width: 100%;
+	/* height: 18px; */
+	background: #ddd;
+	/* margin:  -10px; */
+	padding: 10px;
+	/* box-shadow: inset 2px 2px 7px 2px #a9a9a9; */
+}
+/* TİTLE & DESC */
+
+/* OTHER */
+.seotudy-hr{
+    float:left;
+    width:100%;
+    height: 1px;
+    background: #f3f3f3;
+    border:  none;
+}
+.clearfix{
+	clear:both;
+}
+.row-no-padding > [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+/* OTHER */
+
+#wpfooter{
+	position:static !important;
+}
